@@ -42,4 +42,19 @@ cat "spaces in this filename"
 Doing the above command will present you with the flag for this
 challenge, and the password for Bandit3. 
 
+## Bandit 3 
+
+Once you connect to bandit.labs.overthewire.org on port 2220
+with the Bandit3 user account and the password being the flag
+for the Bandit 2 challenge, you will find yourself with one
+directory called 'inhere' in the ~ directory. 
+
+Upon changing into this directory, you will initially not find 
+any files. This is because they're hidden. In order to view all 
+files, you can add the -a switch to the dir command. Doing this 
+will present you with the .hidden file, which you can read 
+normally with the cat command. Once you do this, you will be 
+presented with the flag for the challenge and the password for 
+Bandit 4.
+
 
