@@ -57,4 +57,9 @@ normally with the cat command. Once you do this, you will be
 presented with the flag for the challenge and the password for 
 Bandit 4.
 
+## Bandit 4
 
+Similar to the Bandit 3 challenge, when you login to the Bandit4
+user account, you will be presented with an /inhere directory.
+This time however it contains 10 dashed file names labeled
+-file00 through -file09. The flag is contained in ./-flag07.
