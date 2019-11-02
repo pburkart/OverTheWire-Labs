@@ -26,4 +26,20 @@ to the - file. To view the contents of the file, we can type
 and also the password for Bandit2.
 
 
+## Bandit 2
+
+Once you collect the flag from Bandit1 you will be able to 
+move on to Bandit2 by connecting to bandit.labs.overthewire.org
+on port 2220 via SSH with the Flag from the previous challenge.
+
+Once logging into Bandit2 you will find a single file in the ~
+directory called "spaces in this filename". In order to read 
+this file, all you have to do is encapsulate the file in double
+quotes when invoking the cat command. 
+
+cat "spaces in this filename"
+
+Doing the above command will present you with the flag for this
+challenge, and the password for Bandit3. 
+
 
