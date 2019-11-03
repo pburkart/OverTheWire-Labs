@@ -63,3 +63,16 @@ Similar to the Bandit 3 challenge, when you login to the Bandit4
 user account, you will be presented with an /inhere directory.
 This time however it contains 10 dashed file names labeled
 -file00 through -file09. The flag is contained in ./-flag07.
+
+## Bandit 5
+
+Upon connecting to Bandit 5 you will find dozens of files in 
+multiple subdirectories, and your task is to find the file that
+is human-readable, 1033 bytes in size, and not exectuable.
+
+This can be done with the following command:
+
+find . -type f -size 1033c ! -executable -exec sh -c 'file -b $0 | grep -q text' {} \; -print
+
+Doing this will return the file with the flag, which can of course
+be read using the cat command.
