@@ -76,3 +76,22 @@ find . -type f -size 1033c ! -executable -exec sh -c 'file -b $0 | grep -q text'
 
 Doing this will return the file with the flag, which can of course
 be read using the cat command.
+
+## Bandit 6
+
+Now that you've familiarized yourself with the "find" command you
+should find this challenge to be even easier than the last. This
+challenge requires you to find a file owned by the user bandit7
+and the group bandit7. It also asks you to find the file that
+is 33 bytes in size, but I found this didn't make the search any
+easier.
+
+My solution was to simply enter the following command:
+
+find -group "bandit6" -user "bandit7"
+
+This command returns a bunch of results, but all but one of them
+are ended with "Permission Denied", which is the file that 
+contains the flag. For users who are better with grep, I'm sure
+you can also pipe these results into grep, to output the only 
+line that didn't contain permission denied. 
